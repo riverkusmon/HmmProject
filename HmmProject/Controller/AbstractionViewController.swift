@@ -26,13 +26,12 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
     
     private lazy var orderedAbstractionViews : [UIViewController] =
     {
-        return
-        [
-            self.newAbstractionViewController(abstractionLevel: "swift"),
-            self.newAbstractionViewController(abstractionLevel: "block"),
-            self.newAbstractionViewController(abstractionLevel: "object"),
-            self.newAbstractionViewController(abstractionLevel: "binary"),
-            self.newAbstractionViewController(abstractionLevel: "gate")
+        return [
+            self.newAbstractionViewController(abstractionLevel: "Swift"),
+            self.newAbstractionViewController(abstractionLevel: "Block"),
+            self.newAbstractionViewController(abstractionLevel: "ByteCode"),
+            self.newAbstractionViewController(abstractionLevel: "Binary"),
+            self.newAbstractionViewController(abstractionLevel: "LogicalGate")
         ]
     }()
 
